@@ -1,42 +1,27 @@
 'use strict';
-let message;
 let userChoiceCountry = prompt('Укажите страну доставки');
 
 if (userChoiceCountry === null) {
-  message = 'До встречи!';
+  console.log('До встречи!');
 } else {
   userChoiceCountry = userChoiceCountry.toLowerCase();
-  let countryDelivery;
-  let priceDelivery;
   switch (userChoiceCountry) {
     case 'китай':
-      countryDelivery = 'Китай';
-      priceDelivery = 100;
-      message = `Доставка в ${countryDelivery} будет стоить ${priceDelivery} кредитов`;
+      alert(`Доставка в Китай будет стоить 100 кредитов`);
       break;
     case 'чили':
-      countryDelivery = 'Чили';
-      priceDelivery = 250;
-      message = `Доставка в ${countryDelivery} будет стоить ${priceDelivery} кредитов`;
+      alert(`Доставка в Чили будет стоить 250 кредитов`);
       break;
     case 'австралия':
-      countryDelivery = 'Австралия';
-      priceDelivery = 170;
-      message = `Доставка в ${countryDelivery} будет стоить ${priceDelivery} кредитов`;
+      alert(`Доставка в Австралию будет стоить 170 кредитов`);
       break;
     case 'индия':
-      countryDelivery = 'Индия';
-      priceDelivery = 80;
-      message = `Доставка в ${countryDelivery} будет стоить ${priceDelivery} кредитов`;
+      alert(`Доставка в Китай будет стоить 80 кредитов`);
       break;
     case 'ямайка':
-      countryDelivery = 'Ямайка';
-      priceDelivery = 120;
-      message = `Доставка в ${countryDelivery} будет стоить ${priceDelivery} кредитов`;
+      alert(`Доставка в Ямайку будет стоить 120 кредитов`);
       break;
     default:
-      message = `В вашей стране доставка не доступна`;
+      alert(`В вашей стране доставка не доступна`);
   }
 }
-
-alert(message);

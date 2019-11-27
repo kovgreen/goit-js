@@ -12,4 +12,7 @@ do {
   }
   total += inputNumber;
 } while (input !== null);
-alert(`Общая сумма чисел равна ${total}`);
+
+if (total > 0 && total !== NaN) {
+  alert(`Общая сумма чисел равна ${total}`);
+}
